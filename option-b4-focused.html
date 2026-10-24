@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>B4 — Focused integrated dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="variants.css">
+  <link rel="stylesheet" href="integrated.css">
+  <script src="shared.js" defer></script>
+  <script src="variants.js" defer></script>
+  <script src="integrated.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <student-sidebar></student-sidebar>
+    <div class="workspace">
+      <header class="app-topbar"><div class="mobile-brand">BNDS Insights</div><div class="breadcrumbs"><span>Students</span><span>/</span><b>Tao (Tom) Example</b></div><div class="top-context"><span>2026–27 · current</span><span class="user-avatar">DA</span></div></header>
+      <main class="main">
+        <div class="page-stack">
+          <div class="b-toolbar"><h1>Student profile</h1><span class="tag purple">B4 · Focused</span><div class="header-actions"><span class="btn">Grades &amp; reports</span><span class="btn primary">+ New log</span></div></div>
+          <div class="integrated-shell focused">
+            <aside class="integrated-context" aria-label="Student context">
+              <section class="card snapshot-card">
+                <div class="snapshot-person"><div class="student-avatar">TE</div><div><h2>Tao (Tom) Example</h2><p>Grade 12 · A Level · 5 classes</p></div></div>
+                <div class="student-badges"><span class="tag amber">Moderate</span><span class="tag red">2 follow-ups</span></div>
+                <div class="snapshot-details"><div class="snapshot-detail"><span>Advisor</span><b>J. Whitfield</b></div><div class="snapshot-detail"><span>Class</span><b>2027</b></div><div class="snapshot-detail"><span>ID</span><b>Demo 2027-014</b></div></div>
+                <div class="snapshot-metrics"><div class="snapshot-metric"><strong>72.0%</strong><span>MB average</span></div><div class="snapshot-metric"><strong>88%</strong><span>Completion</span></div><div class="snapshot-metric"><strong>97.6%</strong><span>Attendance</span></div><div class="snapshot-metric"><strong class="red">2</strong><span>Past due</span></div></div>
+                <div class="snapshot-risk"><i class="dot amber"></i><div><b>Moderate risk</b><span>None → Moderate · 12 Oct</span></div></div>
+              </section>
+            </aside>
+            <div class="integrated-content">
+              <div class="integrated-primary"><log-card></log-card><triple-classes-card></triple-classes-card><attendance-strip></attendance-strip></div>
+              <div class="focused-secondary"><div class="stack"><upcoming-card></upcoming-card><pastdue-card></pastdue-card></div><div class="stack"><marks-card></marks-card><behavior-card></behavior-card></div></div>
+            </div>
+          </div>
+          <footer class="mockup-foot"><span>B4 · Focused integrated dashboard</span><span>Compact sticky rail · Log | Classes | narrow Attendance · grouped secondary work</span></footer>
+        </div>
+      </main>
+    </div>
+  </div>
+  <integrated-nav active="b4"></integrated-nav>
+</body>
+</html>
