@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Option D — Readable student dossier</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="shared.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <student-sidebar></student-sidebar>
+    <div class="workspace">
+      <header class="app-topbar">
+        <div class="mobile-brand">BNDS Insights</div>
+        <div class="breadcrumbs"><span>Students</span><span>/</span><b>Student record</b></div>
+        <div class="top-context"><span>2026–27 · current</span><span class="user-avatar">DA</span></div>
+      </header>
+      <main class="main">
+        <div class="dossier-layout">
+          <nav class="dossier-guide" aria-label="Student record sections">
+            <div class="eyebrow">On this record</div>
+            <a class="guide-link active" href="#current"><span>01</span>Current activity</a>
+            <a class="guide-link" href="#academics"><span>02</span>Academic standing</a>
+            <a class="guide-link" href="#learning"><span>03</span>Work &amp; learning</a>
+            <div class="guide-note">Data through 23 Oct 2026<br>Current school year<br><br>Fictional sample student</div>
+          </nav>
+          <article class="dossier-article">
+            <header class="dossier-header">
+              <div class="dossier-name-row">
+                <div class="student-avatar">TE</div>
+                <div><div class="eyebrow">Student record · 2026–27</div><h1>Tao (Tom) Example</h1></div>
+                <div class="header-actions"><span class="btn">Grades &amp; reports</span><span class="btn primary">+ New log</span></div>
+              </div>
+              <div class="dossier-subtitle">Grade 12 · A Level · Class of 2027 · Advisor: J. Whitfield</div>
+              <div class="student-badges dossier-badges"><span class="tag amber">Moderate risk</span><span class="tag red">2 follow-ups open</span><span class="tag">5 current classes</span></div>
+              <div class="dossier-stats">
+                <div class="dossier-stat"><strong>72.0%</strong><span>ManageBac average</span></div>
+                <div class="dossier-stat"><strong>88%</strong><span>Completion</span></div>
+                <div class="dossier-stat"><strong>97.6%</strong><span>Term attendance</span></div>
+                <div class="dossier-stat"><strong class="red">2</strong><span>Past due to review</span></div>
+              </div>
+            </header>
+
+            <section class="dossier-section" id="current">
+              <div class="dossier-section-heading"><span class="section-number">01</span><h2>Current activity</h2><p>What needs context or follow-up now</p></div>
+              <div class="d-primary"><log-card></log-card><attendance-card></attendance-card></div>
+            </section>
+
+            <section class="dossier-section" id="academics">
+              <div class="dossier-section-heading"><span class="section-number">02</span><h2>Academic standing</h2><p>Current classes and the direction of travel</p></div>
+              <div class="d-secondary"><classes-card></classes-card><marks-card></marks-card></div>
+            </section>
+
+            <section class="dossier-section" id="learning">
+              <div class="dossier-section-heading"><span class="section-number">03</span><h2>Work &amp; learning</h2><p>Deadlines, review items, and learning context</p></div>
+              <div class="d-secondary">
+                <div class="stack"><upcoming-card></upcoming-card><pastdue-card></pastdue-card></div>
+                <div class="stack"><behavior-card></behavior-card><risk-card></risk-card></div>
+              </div>
+            </section>
+            <footer class="dossier-end">Option D · Readable dossier · larger text, fewer boxes, and a persistent section guide on wide screens.</footer>
+          </article>
+        </div>
+      </main>
+    </div>
+  </div>
+  <concept-nav active="d"></concept-nav>
+</body>
+</html>
