@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Option B — Three-column student dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="shared.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <student-sidebar></student-sidebar>
+    <div class="workspace">
+      <header class="app-topbar">
+        <div class="mobile-brand">BNDS Insights</div>
+        <div class="breadcrumbs"><span>Students</span><span>/</span><b>Tao (Tom) Example</b></div>
+        <div class="top-context"><span>2026–27 · current</span><span class="user-avatar">DA</span></div>
+      </header>
+      <main class="main">
+        <div class="page-stack">
+          <div class="b-toolbar">
+            <h1>Student profile</h1><span class="tag purple">Current record</span>
+            <div class="header-actions"><span class="btn">Grades &amp; reports</span><span class="btn primary">+ New log</span></div>
+          </div>
+          <div class="b-top">
+            <div class="b-context">
+              <section class="card identity-card">
+                <div class="student-avatar">TE</div>
+                <h1>Tao (Tom) Example</h1>
+                <div class="student-meta">Grade 12 · A Level<br>Class of 2027 · 5 classes</div>
+                <div class="student-badges"><span class="tag amber">Moderate risk</span><span class="tag red">2 follow-ups</span></div>
+                <div class="identity-details">
+                  <div class="identity-detail"><span>Advisor</span><b>J. Whitfield</b></div>
+                  <div class="identity-detail"><span>Programme</span><b>Cambridge A Level</b></div>
+                  <div class="identity-detail"><span>Student ID</span><b>Demo 2027-014</b></div>
+                </div>
+              </section>
+              <section class="card">
+                <div class="b-stat-grid">
+                  <div class="quick-stat"><strong>72.0%</strong><span>ManageBac avg</span></div>
+                  <div class="quick-stat"><strong>88%</strong><span>Completion</span></div>
+                  <div class="quick-stat"><strong>97.6%</strong><span>Term attendance</span></div>
+                  <div class="quick-stat"><strong class="red">2</strong><span>Past due</span></div>
+                </div>
+              </section>
+              <risk-card></risk-card>
+            </div>
+            <log-card class="b-log"></log-card>
+            <attendance-card class="b-attendance"></attendance-card>
+          </div>
+          <div class="b-bottom">
+            <classes-card></classes-card>
+            <div class="stack"><upcoming-card></upcoming-card><pastdue-card></pastdue-card></div>
+            <div class="stack"><behavior-card></behavior-card><marks-card></marks-card></div>
+          </div>
+          <footer class="mockup-foot"><span>Option B · Three-column dashboard</span><span>Fictional data · dense desktop view, priority stacking on smaller screens</span></footer>
+        </div>
+      </main>
+    </div>
+  </div>
+  <concept-nav active="b"></concept-nav>
+</body>
+</html>
