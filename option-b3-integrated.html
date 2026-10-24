@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>B3 — Integrated full-context dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="variants.css">
+  <link rel="stylesheet" href="integrated.css">
+  <script src="shared.js" defer></script>
+  <script src="variants.js" defer></script>
+  <script src="integrated.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <student-sidebar></student-sidebar>
+    <div class="workspace">
+      <header class="app-topbar"><div class="mobile-brand">BNDS Insights</div><div class="breadcrumbs"><span>Students</span><span>/</span><b>Tao (Tom) Example</b></div><div class="top-context"><span>2026–27 · current</span><span class="user-avatar">DA</span></div></header>
+      <main class="main">
+        <div class="page-stack">
+          <div class="b-toolbar"><h1>Student profile</h1><span class="tag purple">B3 · Full context</span><div class="header-actions"><span class="btn">Grades &amp; reports</span><span class="btn primary">+ New log</span></div></div>
+          <div class="integrated-shell">
+            <aside class="integrated-context" aria-label="Student context">
+              <section class="card identity-card"><div class="student-avatar">TE</div><h1>Tao (Tom) Example</h1><div class="student-meta">Grade 12 · A Level<br>Class of 2027 · 5 classes</div><div class="student-badges"><span class="tag amber">Moderate risk</span><span class="tag red">2 follow-ups</span></div><div class="identity-details"><div class="identity-detail"><span>Advisor</span><b>J. Whitfield</b></div><div class="identity-detail"><span>Programme</span><b>Cambridge A Level</b></div><div class="identity-detail"><span>Student ID</span><b>Demo 2027-014</b></div></div></section>
+              <section class="card"><div class="b-stat-grid"><div class="quick-stat"><strong>72.0%</strong><span>ManageBac avg</span></div><div class="quick-stat"><strong>88%</strong><span>Completion</span></div><div class="quick-stat"><strong>97.6%</strong><span>Term attendance</span></div><div class="quick-stat"><strong class="red">2</strong><span>Past due</span></div></div></section>
+              <risk-card></risk-card>
+              <behavior-card></behavior-card>
+            </aside>
+            <div class="integrated-content">
+              <div class="integrated-primary"><log-card></log-card><triple-classes-card></triple-classes-card><attendance-strip></attendance-strip></div>
+              <div class="integrated-secondary"><upcoming-card></upcoming-card><pastdue-card></pastdue-card><marks-card></marks-card></div>
+            </div>
+          </div>
+          <footer class="mockup-foot"><span>B3 · Integrated full-context dashboard</span><span>Original B rail · Log | Classes | narrow Attendance · secondary work below</span></footer>
+        </div>
+      </main>
+    </div>
+  </div>
+  <integrated-nav active="b3"></integrated-nav>
+</body>
+</html>
