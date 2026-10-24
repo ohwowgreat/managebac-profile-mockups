@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Option A — Balanced student workspace</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="shared.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <student-sidebar></student-sidebar>
+    <div class="workspace">
+      <header class="app-topbar">
+        <div class="mobile-brand">BNDS Insights</div>
+        <div class="breadcrumbs"><span>Students</span><span>/</span><b>Tao (Tom) Example</b></div>
+        <div class="top-context"><span>2026–27 · current</span><span class="user-avatar">DA</span></div>
+      </header>
+      <main class="main">
+        <div class="page-stack">
+          <student-header></student-header>
+          <div class="a-primary">
+            <log-card></log-card>
+            <attendance-card></attendance-card>
+          </div>
+          <div class="a-secondary">
+            <classes-card></classes-card>
+            <div class="stack work-stack">
+              <upcoming-card></upcoming-card>
+              <pastdue-card></pastdue-card>
+            </div>
+          </div>
+          <div class="a-tertiary">
+            <risk-card></risk-card>
+            <behavior-card></behavior-card>
+            <marks-card></marks-card>
+          </div>
+          <footer class="mockup-foot"><span>Option A · Balanced workspace</span><span>Fictional data · logs and attendance lead; secondary context follows</span></footer>
+        </div>
+      </main>
+    </div>
+  </div>
+  <concept-nav active="a"></concept-nav>
+</body>
+</html>
