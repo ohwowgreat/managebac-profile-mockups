@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Student profile — four layout concepts</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="shared.js" defer></script>
+</head>
+<body class="chooser-body">
+  <div class="app">
+    <student-sidebar></student-sidebar>
+    <div class="workspace">
+      <header class="app-topbar">
+        <div class="mobile-brand">BNDS Insights</div>
+        <div class="top-search">Search students, classes, teachers…</div>
+        <div class="top-context"><span>2026–27 · current</span><span class="user-avatar">DA</span></div>
+      </header>
+      <main class="main chooser-main">
+        <div class="chooser-heading">
+          <div>
+            <div class="eyebrow">Student profile · layout review</div>
+            <h1>Four ways to make the profile work harder</h1>
+            <p>The same student, same information, same attendance states — four different hierarchies.</p>
+          </div>
+          <span class="review-badge">4 responsive concepts</span>
+        </div>
+
+        <section class="shared-improvements" aria-label="Shared improvements">
+          <strong>Shared in every concept</strong>
+          <span><i>1</i>Current logs near the top</span>
+          <span><i>2</i>Class names in every attendance period</span>
+          <span><i>3</i>Academics and history move lower</span>
+          <span><i>4</i>No unnecessary full-width cards</span>
+        </section>
+
+        <div class="concept-grid">
+          <a class="concept-card" href="option-a-workspace.html">
+            <div class="concept-preview preview-a" aria-hidden="true">
+              <div class="wire-header"></div>
+              <div class="wire-columns two"><span class="wire-log"></span><span class="wire-attendance"></span></div>
+              <div class="wire-columns two lower"><span></span><span></span></div>
+              <div class="wire-columns three tiny"><span></span><span></span><span></span></div>
+            </div>
+            <div class="concept-copy">
+              <div class="concept-title-row"><span class="concept-letter">A</span><h2>Balanced workspace</h2><span class="recommended">Recommended</span></div>
+              <p>A familiar two-column profile, reordered around what needs attention today.</p>
+              <ul><li>Logs and attendance share the lead row</li><li>Classes pair with upcoming and past-due work</li><li>Lowest-disruption route from the current page</li></ul>
+              <div class="concept-footer"><span>Best all-round default</span><b>Open concept →</b></div>
+            </div>
+          </a>
+
+          <a class="concept-card" href="option-b-columns.html">
+            <div class="concept-preview preview-b" aria-hidden="true">
+              <div class="wire-toolbar"></div>
+              <div class="wire-columns three tall"><span class="wire-context"></span><span class="wire-log"></span><span class="wire-attendance"></span></div>
+              <div class="wire-columns three lower"><span></span><span></span><span></span></div>
+            </div>
+            <div class="concept-copy">
+              <div class="concept-title-row"><span class="concept-letter">B</span><h2>Three-column dashboard</h2></div>
+              <p>A dense command centre for scanning context, pastoral activity, and attendance together.</p>
+              <ul><li>Student context stays in a narrow left rail</li><li>Logs and attendance get equal prominence</li><li>More information visible at once on large screens</li></ul>
+              <div class="concept-footer"><span>Best for power users</span><b>Open concept →</b></div>
+            </div>
+          </a>
+
+          <a class="concept-card" href="option-c-today.html">
+            <div class="concept-preview preview-c" aria-hidden="true">
+              <div class="wire-header"></div>
+              <div class="wire-board"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="wire-columns two"><span class="wire-log"></span><span class="wire-context"></span></div>
+              <div class="wire-class-cards"><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="concept-copy">
+              <div class="concept-title-row"><span class="concept-letter">C</span><h2>Today-first board</h2></div>
+              <p>The day’s timetable becomes the lead signal, followed by conversations and follow-up.</p>
+              <ul><li>Every period and class readable at a glance</li><li>Attendance exceptions are impossible to miss</li><li>Classes become compact academic cards</li></ul>
+              <div class="concept-footer"><span>Best for daily pastoral review</span><b>Open concept →</b></div>
+            </div>
+          </a>
+
+          <a class="concept-card" href="option-d-dossier.html">
+            <div class="concept-preview preview-d" aria-hidden="true">
+              <div class="wire-dossier"><span class="wire-guide"></span><div><div class="wire-title"></div><div class="wire-columns two"><span class="wire-log"></span><span class="wire-attendance"></span></div><div class="wire-lines"></div></div></div>
+            </div>
+            <div class="concept-copy">
+              <div class="concept-title-row"><span class="concept-letter">D</span><h2>Readable dossier</h2></div>
+              <p>A calmer student record with stronger typography and less dashboard chrome.</p>
+              <ul><li>Section guide makes longer profiles easy to navigate</li><li>Current activity still leads the record</li><li>More breathing room for log text and academic context</li></ul>
+              <div class="concept-footer"><span>Best for focused reading</span><b>Open concept →</b></div>
+            </div>
+          </a>
+        </div>
+
+        <section class="decision-note">
+          <div><span class="decision-label">A practical starting point</span><h2>Choose one direction — or combine them</h2></div>
+          <p>Option A is the safest production default. Option C’s horizontal attendance board can also be combined with A’s two-column layout if the day view should lead.</p>
+        </section>
+        <footer class="mockup-foot"><span>All student names and content are fictional sample data.</span><span>No production code changed · static layout review</span></footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
