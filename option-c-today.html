@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Option C — Today-first student board</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="shared.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <student-sidebar></student-sidebar>
+    <div class="workspace">
+      <header class="app-topbar">
+        <div class="mobile-brand">BNDS Insights</div>
+        <div class="breadcrumbs"><span>Students</span><span>/</span><b>Tao (Tom) Example</b></div>
+        <div class="top-context"><span>2026–27 · current</span><span class="user-avatar">DA</span></div>
+      </header>
+      <main class="main">
+        <div class="page-stack">
+          <student-header mode="today"></student-header>
+          <attendance-card mode="board"></attendance-card>
+          <div class="c-middle">
+            <log-card></log-card>
+            <div class="stack"><upcoming-card></upcoming-card><pastdue-card></pastdue-card></div>
+          </div>
+          <class-cards class="c-classes"></class-cards>
+          <div class="c-bottom">
+            <risk-card></risk-card>
+            <behavior-card></behavior-card>
+            <marks-card></marks-card>
+          </div>
+          <footer class="mockup-foot"><span>Option C · Today-first board</span><span>Fictional data · the selected day leads; classes become compact academic cards</span></footer>
+        </div>
+      </main>
+    </div>
+  </div>
+  <concept-nav active="c"></concept-nav>
+</body>
+</html>
